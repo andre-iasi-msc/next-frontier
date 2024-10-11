@@ -24,13 +24,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={mainFont.variable} style={{fontFamily: "var(--font-main)"}}>
-      <AppRouterCacheProvider>
-        <ThemeProvider theme={theme}>
-          {children}
-        </ThemeProvider>
-      </AppRouterCacheProvider>
-      </body>
+    <body className={mainFont.variable}>
+    <AppRouterCacheProvider>
+      <ThemeProvider theme={theme}>
+        {children}
+      </ThemeProvider>
+    </AppRouterCacheProvider>
+    </body>
     </html>
   );
 }
