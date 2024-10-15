@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  next-frontier:
+    build:
+      context: ../
+      dockerfile: Dockerfile
+    ports:
+      - '8000:3000'
+    env_file:
+      - .env
